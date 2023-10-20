@@ -1,0 +1,85 @@
+.img {
+  height: 500px;
+  width: 100%;
+}
+.mainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* background-color: whitesmoke; */
+  /* background-image: linear-gradient(
+    to bottom,
+    white,
+    rgba(255, 0, 0, 0.526),
+    white,
+    rgba(255, 0, 0, 0.526),
+    white
+  );
+  background-size: 100% 600px; */
+  background-image: url("../../images/HomepageImages/blur.jpg");
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
+}
+.firstDiv {
+  width: 20%;
+
+  height: 600px;
+  background-image: url("../../images/HomepageImages/first.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+}
+.lastDiv {
+  width: 20%;
+  height: 500px;
+
+  background-image: url(../../images/HomepageImages/last.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+}
+.mainCOursel {
+  width: 60%;
+  height: 500px;
+  box-shadow: 2px 10px 20px rgb(255, 252, 252);
+}
+.couHead1 {
+  color: white;
+  background-color: rgba(255, 204, 0, 0.201);
+}
+.couHead2 {
+  color: white;
+}
+.couHead3 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.488);
+}
+.couPara1 {
+  font-size: 15px;
+  background-color: rgba(255, 204, 0, 0.201);
+}
+.couPara2 {
+  font-size: 15px;
+}
+.couPara3 {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.488);
+}
+.lowerDiv {
+  height: 200px;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  background-size: 100% 200px;
+}
+.span1 {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: 1000;
+  text-shadow: 2px 2px 5px black;
+}
+.span2 {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: 1000;
+  text-shadow: 2px 2px 5px black;
+}

@@ -1,13 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Login from "./components/login";
+import Otp from "./components/Otp";
+import Cards from "./components/intro";
+import Userinfo from "./components/userInfo";
+import Nav from "./components/Homepage/Nav";
+import Coursel from "./components/Homepage/Coursel";
+import Body from "./components/Homepage/body";
+import Footer from "./components/Homepage/Footer";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <Login /> */}
+    {/* <Otp /> */}
+    {/* <Cards /> */}
+    {/* <Userinfo /> */}
+    {/* <Nav /> */}
+    {/* <Coursel /> */}
+    {/* <Body /> */}
+    {/* <Footer /> */}
   </React.StrictMode>
 );
 

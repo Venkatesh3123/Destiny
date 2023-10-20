@@ -1,0 +1,76 @@
+.nav {
+  height: 60px;
+  background-image: linear-gradient(
+    to right,
+    blue,
+    blue,
+    rgb(148, 18, 137),
+    rgb(148, 18, 137)
+  );
+  width: 100%;
+  background-size: 100% 60px;
+}
+.logoImg {
+  height: 40px;
+  width: 40px;
+  margin-left: 6px;
+  margin-top: 4px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.ImgDiv {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+.Img-p {
+  color: white;
+  font-synthesis: weight;
+  font-family: cursive;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.navDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.ulContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  list-style-type: none;
+  float: right;
+  color: white;
+  font-weight: bold;
+  padding-left: 0px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.linkHome {
+  text-decoration: none;
+  color: white;
+}
+.ulContainer li {
+  margin-right: 120px;
+  cursor: pointer;
+}
+.ulContainer li:hover {
+  color: black;
+}
+.logoDiv {
+  float: left;
+  width: 80%;
+}
+.ulDiv {
+  width: 50%;
+  float: left;
+}

@@ -1,0 +1,63 @@
+.subFooter1 {
+  height: 250px;
+  width: 100%;
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.footerSub {
+  display: block;
+}
+.subFooter2 {
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+}
+.subChild1 {
+  height: 150px;
+  width: 90%;
+  border: 2px solid black;
+  background-image: url("../../images/HomepageImages/blur.jpg");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  box-shadow: 2px 2px 15px white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image1 {
+  height: 120px;
+  width: 180px;
+  border-radius: 9px;
+  margin-left: 40px;
+}
+.textAlign {
+  text-align: center;
+}
+.spanFont1 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: URW ChanceryL, cursive;
+  color: white;
+}
+.spanFont2 {
+  font-size: 16px;
+  font-family: bold;
+  color: white;
+}
+.button1 {
+  margin-top: 40px;
+  margin-left: 250px;
+  border-radius: 6px;
+  width: 100px;
+  background-color: rgb(161, 37, 140);
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,694 @@
+/* loader.css */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: grey;
+  margin-top: 100px;
+  border: 3px solid red;
+  border-radius: 3px;
+}
+.mainContainer {
+  height: 700px;
+  width: 86%;
+  background-color: white;
+
+  padding: 100px;
+}
+.cardBorder {
+  /* background-image: url("https://static.tnn.in/thumb/msid-96439520,thumbsize-95926,width-1280,height-720,resizemode-75/96439520.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  border: 1px solid BLACK;
+  align-items: center;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  justify-content: center;
+  /* background-color: transparent; */
+  background-image: url("../images/blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 500px;
+  margin-right: 500px;
+  height: 650px;
+  margin-top: 40px;
+  box-shadow: 1px 5px 20px rgb(25, 59, 127);
+}
+
+.card1 {
+  display: block;
+}
+.start1 {
+  background-image: url("../images/background.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+}
+.arrowLeft {
+  border: 2px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.arrowLeft1 {
+  border: 2px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  cursor: not-allowed;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.arrowLeft1 :hover {
+  background-color: red;
+}
+.arrowRight {
+  border: 2px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 390px;
+  margin-top: 100px;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.arrowRight:hover {
+  background-color: red;
+}
+.arrowLeft:hover {
+  background-color: red;
+}
+.skip {
+  color: white;
+  cursor: pointer;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 30px;
+  position: sticky;
+}
+.skip:hover {
+  color: red;
+}
+.card1Img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1Img1 {
+  height: 120px;
+  width: 120px;
+  border: 2px solid rgb(234, 84, 84);
+  border-radius: 50%;
+}
+.cardH2 {
+  text-align: center;
+  color: white;
+}
+.p {
+  text-align: center;
+  color: white;
+}
+.card1Img11 {
+  height: 120px;
+  width: 170px;
+  border: 2px solid rgb(234, 84, 84);
+  border-radius: 6px;
+  box-shadow: 1px 8px 18px black;
+}
+/* @media screen and (min-width: 0px) and (max-width: 426px) {
+  .img1 {
+    display: block;
+
+    margin: 0px;
+    background-color: grey;
+    margin-top: 0px;
+    border: 3px solid red;
+    border-radius: 3px;
+  }
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    padding: 100px;
+  }
+  .card {
+    
+
+    border: 2px solid rgb(133, 46, 208);
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 30px;
+    margin-right: 0px;
+    height: 70%;
+    margin-top: 90px;
+    box-shadow: 1px 5px 20px white;
+    width: 80%;
+  }
+
+  .card1 {
+    display: block;
+  }
+  .start1 {
+    background-image: url("../images/background1.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: none;
+    width: 100%;
+  }
+  .arrowLeft {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: not-allowed;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 :hover {
+    background-color: red;
+  }
+  .arrowRight {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 75%;
+    top: 68%;
+  }
+  .arrowRight:hover {
+    background-color: red;
+  }
+  .arrowLeft:hover {
+    background-color: red;
+  }
+  .skip {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    position: sticky;
+  }
+  .skip:hover {
+    color: red;
+  }
+  .card1Img {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1Img1 {
+    height: 120px;
+    width: 120px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+  .h2 {
+    text-align: center;
+    color: white;
+  }
+  .p {
+    text-align: center;
+    color: white;
+  }
+  .card1Img11 {
+    height: 120px;
+    width: 170px;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 1px 8px 18px black;
+  }
+}
+@media screen and (min-width: 427px) and (max-width: 769px) {
+  .img1 {
+    display: block;
+
+    margin: 0px;
+    background-color: grey;
+    margin-top: 0px;
+    border: 3px solid red;
+    border-radius: 3px;
+  }
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    padding: 100px;
+  }
+  .card {
+    
+    border: 2px solid rgb(133, 46, 208);
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 80px;
+    margin-right: 0px;
+    height: 650px;
+    margin-top: 90px;
+    box-shadow: 1px 5px 20px white;
+    width: 80%;
+  }
+
+  .card1 {
+    display: block;
+  }
+  .start1 {
+    background-image: url("../images/background1.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: none;
+    width: 100%;
+  }
+  .arrowLeft {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: not-allowed;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 :hover {
+    background-color: red;
+  }
+  .arrowRight {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 84%;
+    top: 68.5%;
+  }
+  .arrowRight:hover {
+    background-color: red;
+  }
+  .arrowLeft:hover {
+    background-color: red;
+  }
+  .skip {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    position: sticky;
+  }
+  .skip:hover {
+    color: red;
+  }
+  .card1Img {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1Img1 {
+    height: 120px;
+    width: 120px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+  .h2 {
+    text-align: center;
+    color: white;
+  }
+  .p {
+    text-align: center;
+    color: white;
+  }
+  .card1Img11 {
+    height: 120px;
+    width: 170px;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 1px 8px 18px black;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .img1 {
+    display: block;
+
+    margin: 0px;
+    background-color: grey;
+    margin-top: 0px;
+    border: 3px solid red;
+    border-radius: 3px;
+  }
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    padding: 100px;
+  }
+  .card {
+    
+    border: 2px solid rgb(133, 46, 208);
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 0px;
+    height: 650px;
+    margin-top: 120px;
+    box-shadow: 1px 5px 20px white;
+    width: 80%;
+  }
+
+  .card1 {
+    display: block;
+  }
+  .start1 {
+    background-image: url("../images/background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: none;
+    width: 100%;
+  }
+  .arrowLeft {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: not-allowed;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 :hover {
+    background-color: red;
+  }
+  .arrowRight {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 84%;
+    top: 68.5%;
+  }
+  .arrowRight:hover {
+    background-color: red;
+  }
+  .arrowLeft:hover {
+    background-color: red;
+  }
+  .skip {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    position: sticky;
+  }
+  .skip:hover {
+    color: red;
+  }
+  .card1Img {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1Img1 {
+    height: 120px;
+    width: 120px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+  .h2 {
+    text-align: center;
+    color: white;
+  }
+  .p {
+    text-align: center;
+    color: white;
+  }
+  .card1Img11 {
+    height: 120px;
+    width: 170px;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 1px 8px 18px black;
+  }
+}
+@media screen and (min-width: 1026px) and (max-width: 1440px) {
+  .img1 {
+    display: block;
+
+    margin: 0px;
+    background-color: grey;
+    margin-top: 0px;
+    border: 3px solid red;
+    border-radius: 3px;
+  }
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    padding: 100px;
+  }
+  .card {
+   
+    border: 2px solid rgb(133, 46, 208);
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 0px;
+    height: 650px;
+    margin-top: 120px;
+    box-shadow: 1px 5px 20px white;
+    width: 80%;
+  }
+
+  .card1 {
+    display: block;
+  }
+  .start1 {
+    background-image: url("../images/background.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: none;
+    width: 100%;
+  }
+  .arrowLeft {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: not-allowed;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    position: fixed;
+    top: 75%;
+  }
+  .arrowLeft1 :hover {
+    background-color: red;
+  }
+  .arrowRight {
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 84%;
+    top: 68.5%;
+  }
+  .arrowRight:hover {
+    background-color: red;
+  }
+  .arrowLeft:hover {
+    background-color: red;
+  }
+  .skip {
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    position: sticky;
+  }
+  .skip:hover {
+    color: red;
+  }
+  .card1Img {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1Img1 {
+    height: 120px;
+    width: 120px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+  .h2 {
+    text-align: center;
+    color: white;
+  }
+  .p {
+    text-align: center;
+    color: white;
+  }
+  .card1Img11 {
+    height: 120px;
+    width: 170px;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 1px 8px 18px black;
+  }
+} */
