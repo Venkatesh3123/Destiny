@@ -1,6 +1,7 @@
 .img {
   height: 500px;
   width: 100%;
+  box-shadow: 2px 10px 20px rgb(255, 252, 252);
 }
 .mainDiv {
   display: flex;
@@ -16,30 +17,31 @@
     white
   );
   background-size: 100% 600px; */
-  background-image: url("../../images/HomepageImages/blur.jpg");
-  background-size: 100% 600px;
-  background-repeat: no-repeat;
+
+  height: 600px;
 }
 .firstDiv {
   width: 20%;
 
   height: 600px;
-  background-image: url("../../images/HomepageImages/first.jpg");
+  background-image: url("../../images/HomepageImages/blur.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 500px;
+  background-size: 100% 560px;
 }
 .lastDiv {
   width: 20%;
   height: 500px;
 
-  background-image: url(../../images/HomepageImages/last.jpg);
+  background-image: url("../../images/HomepageImages/last.jpg");
   background-repeat: no-repeat;
   background-size: 100% 500px;
 }
 .mainCOursel {
   width: 60%;
-  height: 500px;
-  box-shadow: 2px 10px 20px rgb(255, 252, 252);
+  height: 200px;
+  box-shadow: 2px 30px 60px rgb(255, 252, 252);
+  margin-top: 60px;
+  z-index: -1;
 }
 .couHead1 {
   color: white;
@@ -72,6 +74,8 @@
   border: 2px solid black;
   background-color: whitesmoke;
   background-size: 100% 200px;
+  position: relative;
+  top: -50px;
 }
 .span1 {
   font-family: Copperplate, Papyrus, fantasy;

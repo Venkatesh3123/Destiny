@@ -1,5 +1,5 @@
 .Footer {
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -13,6 +13,8 @@
   border: 1px solid black;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 .FooterDiv1 {
   width: 50%;

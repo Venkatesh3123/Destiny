@@ -1,5 +1,5 @@
 .subFooter1 {
-  height: 250px;
+  height: 300px;
   width: 100%;
   background-image: url("../../images/background.jpg");
   background-size: cover;
@@ -8,6 +8,8 @@
   border: 1px solid black;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -50px;
 }
 .footerSub {
   display: block;
