@@ -11,7 +11,7 @@ export default function Otp() {
   const [prev, setPrev] = useState(true);
   const back = () => {
     if (prev) {
-      navigate("/Login");
+      navigate("/Homepage/Signup");
     } else {
       setPrev(false);
     }

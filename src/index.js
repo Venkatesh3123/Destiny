@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Login from "./components/login";
+import Signup from "./components/signup";
 import Otp from "./components/Otp";
 import Cards from "./components/intro";
 import Userinfo from "./components/userInfo";
@@ -11,6 +11,7 @@ import Nav from "./components/Homepage/Nav";
 import Coursel from "./components/Homepage/Coursel";
 import Body from "./components/Homepage/body";
 import Footer from "./components/Homepage/Footer";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ root.render(
     {/* <Otp /> */}
     {/* <Cards /> */}
     {/* <Userinfo /> */}
+    {/* <Homepage /> */}
     {/* <Nav /> */}
     {/* <Coursel /> */}
     {/* <Body /> */}

@@ -68,8 +68,10 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  position: fixed;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 60px;
 }
 .arrowLeft {
   border: 2px solid grey;
@@ -122,6 +124,9 @@
   margin-right: 20px;
   margin-top: 30px;
   position: sticky;
+  width: 10%;
+  font-size: 20px;
+  margin-left: 450px;
 }
 .skip:hover {
   color: red;

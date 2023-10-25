@@ -44,14 +44,14 @@ export default function Cards() {
   //     };
   //   }, []);
   const skip = () => {
-    navigate("/Login");
+    navigate("/Signup");
   };
 
   const nextCard = () => {
     if (currentCardIndex < cards.length - 1) {
       setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
     } else {
-      navigate("/Login");
+      navigate("/Signup");
     }
   };
 

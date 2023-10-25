@@ -14,7 +14,7 @@ import {
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export default function Login() {
+export default function Signup() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [errorTime, setErrorTime] = useState("");
@@ -648,7 +648,7 @@ export default function Login() {
     }));
 
     if (nme & locate & dte & tmy & gender & status1 & code & mbl) {
-      navigate("/Login/OTP&verification");
+      navigate("/Signup/OTP&verification");
     }
   };
 

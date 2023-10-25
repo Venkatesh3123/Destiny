@@ -8,7 +8,7 @@ export default function Coursel() {
   return (
     <>
       <div className="mainDiv">
-        {/* <div className="firstDiv"></div> */}
+        <div className="firstDiv"></div>
         <div className="mainCOursel">
           <Carousel>
             <Carousel.Item interval={800}>
@@ -57,8 +57,9 @@ export default function Coursel() {
             </Carousel.Item>
           </Carousel>
         </div>
-        {/* <div className="lastDiv"></div> */}
+        <div className="firstDiv"></div>
       </div>
+
       <div className="lowerDiv">
         <p className="pDiv">
           {" "}

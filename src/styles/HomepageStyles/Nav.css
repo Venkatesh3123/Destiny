@@ -9,6 +9,7 @@
   );
   width: 100%;
   background-size: 100% 60px;
+  position: fixed;
 }
 .logoImg {
   height: 40px;
@@ -46,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 90%;
   list-style-type: none;
   float: right;
   color: white;
@@ -60,7 +61,7 @@
   color: white;
 }
 .ulContainer li {
-  margin-right: 120px;
+  margin-right: 90px;
   cursor: pointer;
 }
 .ulContainer li:hover {
