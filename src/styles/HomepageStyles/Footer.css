@@ -3,17 +3,15 @@
   width: 100%;
   background-image: linear-gradient(
     to right,
-    blue,
-    blue,
-    rgb(148, 18, 137),
-    rgb(148, 18, 137)
+    rgb(73, 70, 70),
+    rgba(255, 0, 0, 0.786)
   );
   background-size: 100% 150px;
   display: flex;
   border: 1px solid black;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: -50px;
 }
 .FooterDiv1 {
@@ -36,6 +34,10 @@
 }
 .liSpan {
   cursor: pointer;
+}
+.liSpan1 {
+  cursor: pointer;
+  margin-left: 3px;
 }
 .liSpan:hover {
   color: black;
@@ -62,4 +64,11 @@
   margin-right: 20px;
   height: 15px;
   width: 15px;
+}
+.a {
+  text-decoration: none;
+  color: white;
+}
+.a:hover {
+  color: black;
 }
