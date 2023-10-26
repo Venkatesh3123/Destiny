@@ -8,6 +8,7 @@ import Otp from "./components/Otp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./components/signup";
 import Homepage from "./components/Homepage/Nav";
+import LoginForm from "./components/Login";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,8 @@ function App() {
 
         <Route path="/Cards" element={<Cards />}></Route>
         <Route path="/Signup" element={<Signup />}></Route>
+        <Route path="/Login" element={<LoginForm />}></Route>
+
         <Route path="/Signup/OTP&verification" element={<Otp />}></Route>
       </Routes>
     </BrowserRouter>

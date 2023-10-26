@@ -11,11 +11,14 @@ import Nav from "./components/Homepage/Nav";
 import Coursel from "./components/Homepage/Coursel";
 import Body from "./components/Homepage/body";
 import Footer from "./components/Homepage/Footer";
+import LoginForm from "./components/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <Signup /> */}
+    {/* <LoginForm /> */}
     {/* <Login /> */}
     {/* <Otp /> */}
     {/* <Cards /> */}

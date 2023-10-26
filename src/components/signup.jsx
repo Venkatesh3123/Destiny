@@ -1,6 +1,6 @@
-import "../styles/login.css";
+import "../styles/signup.css";
 import destiny from "../images/destiny.png";
-import "../styles/userInfo.css";
+
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
@@ -12,6 +12,8 @@ import {
   faClock,
   faTransgender,
   faHeart,
+  faLock,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Signup() {
@@ -34,6 +36,10 @@ export default function Signup() {
   const [submit2, setSubmit2] = useState(false);
   const [submit3, setSubmit3] = useState(false);
   const [submit4, setSubmit4] = useState(false);
+  const [password, setPassword] = useState("");
+  const [passSubmit, setPassSubmit] = useState(false);
+  const [repassword, reSetPassword] = useState("");
+  const [repassSubmit, reSetPassSubmit] = useState(false);
 
   const [mobileSubmit, setMobileSubmit] = useState(false);
   let data = [
@@ -539,11 +545,81 @@ export default function Signup() {
       mobile: error1,
     }));
   };
+  const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).*$/;
+  const passChange = (event) => {
+    setPassword(event.target.value);
+    const handlePassword = (event) => {
+      if (password === "") {
+        return "Please enter the password ";
+      } else if (password.length < 8) {
+        return "Please enter the password morethan 7 letters";
+      } else if (!hasUpperCase.test(password)) {
+        return "Password must contain atleast One capital letter";
+      } else if (!hasLowerCase.test(password)) {
+        return "Password must contain atleast One Lowercase letter";
+      } else if (!hasNumber.test(password)) {
+        return "Password must contain atleast One number";
+      } else if (!hasSpecialChar.test(password)) {
+        return "Password must contain atleast One special character like @#$%^ ";
+      } else {
+        setPassSubmit(false);
+      }
+    };
+    const error1 = handlePassword();
+    setError((prev) => ({
+      ...prev,
+      password1: error1,
+    }));
+  };
+
+  // const handlePassword = (event) => {
+  //   if (password === "") {
+  //     return "Please enter the password ";
+  //   } else if (password.length < 8) {
+  //     return "please enter morethan eight";
+  //   } else {
+  //     setPassSubmit(false);
+  //   }
+  // };
+  // const passClick = () => {
+  // const error1 = handlePassword();
+  // setError((prev) => ({
+  //   ...prev,
+  //   password1: error1,
+  // }));
+  // };
+
+  const repassChange = (event) => {
+    reSetPassword(event.target.value);
+  };
+
+  const rehandlePassword = () => {
+    if (repassword === "") {
+      return "Please Enter Your confirm Password";
+    } else {
+      reSetPassSubmit(false);
+    }
+  };
+  const repassClick = () => {
+    const error1 = rehandlePassword();
+    setError((prev) => ({
+      ...prev,
+      password2: error1,
+    }));
+  };
 
   const navigate = useNavigate();
   const namePattern = /[A-Za-z]/;
   const mobilePattern = /[0-9]/;
+  const minLength = 8;
+  const hasUpperCase = /[A-Z]/;
+  const hasLowerCase = /[a-z]/;
+  const hasNumber = /[0-9]/;
+  const hasSpecialChar = /[!@#$%^&*]/;
+
   var nme = false;
+  var pass = false;
+  var repass = false;
   var locate = false;
   var dte = false;
   var tmy = false;
@@ -555,6 +631,8 @@ export default function Signup() {
     e.preventDefault();
     setSubmit(true);
     setSubmit1(true);
+    setPassSubmit(true);
+    reSetPassSubmit(true);
     setMobileSubmit(true);
     const handleName = () => {
       if (name === "") {
@@ -647,8 +725,60 @@ export default function Signup() {
       mobile: error3,
     }));
 
-    if (nme & locate & dte & tmy & gender & status1 & code & mbl) {
+    const handlePassword = () => {
+      if (password === "") {
+        return "Please Enter Your Password";
+      } else if (password.length < 8) {
+        return "Please enter the password morethan 7 letters";
+      } else if (!hasUpperCase.test(password)) {
+        return "Password must contain atleast One capital letter";
+      } else if (!hasLowerCase.test(password)) {
+        return "Password must contain atleast One Lowercase letter";
+      } else if (!hasNumber.test(password)) {
+        return "Password must contain atleast One number";
+      } else if (!hasSpecialChar.test(password)) {
+        return "Password must contain atleast One special character like @#$%^ ";
+      } else {
+        return (pass = true);
+      }
+    };
+
+    const error7 = handlePassword();
+    setError((prev) => ({
+      ...prev,
+      password1: error7,
+    }));
+
+    const rehandlePassword = () => {
+      if (repassword === "") {
+        return "Please Enter Your confirm Password";
+      } else if (!repassword.match(password)) {
+        return "Please doesn't match the previous Password";
+      } else {
+        return (repass = true);
+      }
+    };
+
+    const error8 = rehandlePassword();
+    setError((prev) => ({
+      ...prev,
+      password2: error8,
+    }));
+
+    if (
+      nme &
+      locate &
+      dte &
+      tmy &
+      gender &
+      status1 &
+      code &
+      mbl &
+      pass &
+      repass
+    ) {
       navigate("/Signup/OTP&verification");
+      console.log(name);
     }
   };
 
@@ -658,6 +788,7 @@ export default function Signup() {
   const currentYear = String(today.getFullYear());
 
   const maxDate = `${currentDate}-${currentMonth}-${currentYear}`;
+
   return (
     <>
       <div className="mainContainer">
@@ -666,16 +797,16 @@ export default function Signup() {
             <div className="imgDiv">
               <img src={destiny} className="des"></img>
             </div>
-            <h2 className="head">Welcome to the world of astrology</h2>
+            <h2 className="head">Welcome To World Of Destiny</h2>
             <div>
               <p className="subHead">
-                Astrology is an antiquated convention which says that the
+                Destiny is an antiquated convention which says that the
                 character and predetermination of human rely upon the situation
-                of the stars right now of birth
+                of the stars right now of birth.
               </p>
             </div>
             <h2 className="head">SIGN UP</h2>
-            <label className="label1">NAME:</label>
+            <label className="label12">NAME:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faUser} size="xl" className="user" />
               <input
@@ -697,7 +828,7 @@ export default function Signup() {
               <p></p>
             )}
 
-            <label className="label1">LOCATION:</label>
+            <label className="label12">LOCATION:</label>
 
             <div className="nameDiv">
               <FontAwesomeIcon
@@ -725,7 +856,7 @@ export default function Signup() {
               <p></p>
             )}
 
-            <label className="label1">DATE OF BIRTH:</label>
+            <label className="label12">DATE OF BIRTH:</label>
             <div className="nameDiv">
               <FontAwesomeIcon
                 icon={faCalendarDays}
@@ -755,7 +886,7 @@ export default function Signup() {
               <p></p>
             )}
 
-            <label className="label1">TIME OF BIRTH:</label>
+            <label className="label12">TIME OF BIRTH:</label>
 
             <div className="nameDiv">
               <FontAwesomeIcon icon={faClock} size="xl" className="user" />
@@ -772,7 +903,7 @@ export default function Signup() {
               />
             </div>
             {errorTime && <p className="error">{errorTime}</p>}
-            <label className="label1">GENDER:</label>
+            <label className="label12">GENDER:</label>
             <div className="nameDiv">
               <FontAwesomeIcon
                 icon={faTransgender}
@@ -795,7 +926,7 @@ export default function Signup() {
             ) : (
               ""
             )}
-            <label className="label1">RELATIONSHIP STATUS:</label>
+            <label className="label12">RELATIONSHIP STATUS:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faHeart} size="xl" className="user" />
               <select
@@ -815,11 +946,51 @@ export default function Signup() {
             ) : (
               ""
             )}
+            <label className="label12">PASSWORD:</label>
+            <div className="nameDiv">
+              <FontAwesomeIcon icon={faLock} size="xl" className="user" />
+              <input
+                type="password"
+                className="nameInput"
+                placeholder="Enter Your Password"
+                onChange={passChange}
+                // onBlur={passClick}
+                value={password}
+              ></input>
+            </div>
+            {/* {passSubmit & (pass == false) ? (
+              <p className="error">{error.password1}</p>
+            ) : (
+              <p></p>
+            )} */}
+            {error ? <p className="error">{error.password1}</p> : <p></p>}
+
+            <label className="label12">CONFIRM-PASSWORD:</label>
+            <div className="nameDiv">
+              <FontAwesomeIcon icon={faLock} size="xl" className="user" />
+              <input
+                type="password"
+                className="nameInput"
+                placeholder="Enter Your Password"
+                onChange={repassChange}
+                onClick={repassClick}
+              ></input>
+            </div>
+            {repassSubmit & (repass == false) ? (
+              <p className="error">{error.password2}</p>
+            ) : (
+              <p></p>
+            )}
+            {(repassword === "") & (repassSubmit == false) ? (
+              <p className="error">{error.password2}</p>
+            ) : (
+              <p></p>
+            )}
 
             {/* <h4 className="side">Enter Your Mobile:</h4> */}
-            <label className="label1">MOBILE NUMBER:</label>
+            <label className="label12">MOBILE NUMBER:</label>
             <div className="nameDiv">
-              <FontAwesomeIcon icon={faClock} size="xl" className="user" />
+              <FontAwesomeIcon icon={faPhone} size="xl" className="user" />
               <select
                 className="select1"
                 value={selectedCode}

@@ -1,10 +1,11 @@
 .subFooter1 {
   height: 300px;
   width: 100%;
-  background-image: url("../../images/background.jpg");
-  background-size: cover;
+  background-image: url("../../images/HomepageImages/timetravel2.jpg");
+  background-size: 100% 400px;
   background-repeat: no-repeat;
   display: flex;
+  background-color: black;
   border: 1px solid black;
   justify-content: center;
   align-items: center;
@@ -21,18 +22,21 @@
 }
 .subChild1 {
   height: 150px;
-  width: 90%;
-  border: 2px solid black;
+  width: 60%;
+  border: 2px solid white;
+  /* background-color: rgba(0, 0, 0, 0.541); */
   background-image: url("../../images/HomepageImages/blur.jpg");
   background-size: 100% 200px;
   background-repeat: no-repeat;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
-  box-shadow: 2px 2px 15px white;
-  margin-top: 10px;
+  box-shadow: 1px 15px 25px rgb(7, 48, 130);
+  margin-top: 80px;
+  margin-left: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .image1 {
   height: 120px;
@@ -58,8 +62,12 @@
   margin-top: 40px;
   margin-left: 250px;
   border-radius: 6px;
-  width: 100px;
+  width: 150px;
   background-color: rgb(161, 37, 140);
   color: white;
   cursor: pointer;
+  font-family: cursive;
+}
+.button1:hover {
+  transform: scale(1.2);
 }

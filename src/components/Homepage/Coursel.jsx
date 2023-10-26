@@ -2,8 +2,8 @@ import Carousel from "react-bootstrap/Carousel";
 import "../../styles/HomepageStyles/coursel.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../../images/HomepageImages/time1.jpg";
-import img2 from "../../images/HomepageImages/new.jpg";
-import img3 from "../../images/HomepageImages/personal.jpg";
+import img2 from "../../images/HomepageImages/coursel2.jpg";
+import img3 from "../../images/HomepageImages/coursel-3.jpg";
 export default function Coursel() {
   return (
     <>
@@ -34,8 +34,8 @@ export default function Coursel() {
                   {" "}
                   <h3 className="couHead2">Future In Our Hands</h3>
                   <p className="couPara2">
-                    There is no better boat than a horoscope to help a man cross
-                    over the sea of a life
+                    Predicting is the Future isn't a magic.It's a Artifical
+                    intelligence.
                   </p>
                 </div>
               </Carousel.Caption>
@@ -46,32 +46,31 @@ export default function Coursel() {
                 <div>
                   {" "}
                   <h3 className="couHead3" style={{ color: "white" }}>
-                    Chance To Know Your Future In This Book
+                    Chance To Know Your Future In This Time Machine
                   </h3>
                   <p className="couPara3">
-                    Astrology like a gravity.You don't have to believe in it for
-                    it to be working in your life
+                    The Door is open for best way to predict your future life.
                   </p>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="firstDiv"></div>
+        <div className="lastDiv"></div>
       </div>
 
       <div className="lowerDiv">
-        <p className="pDiv">
+        <p>
           {" "}
           <span className="span1">UNLOCK YOUR COSMIC JOURNEY</span>
         </p>
         <br></br>
-        <p>
+        <p className="pLower">
           Explore Your <span className="span2">WEEKLY , DAILY , MONTHLY</span>{" "}
           and <span className="span2">YEARLY</span>
         </p>
         <br></br>
-        <p>Horoscopes with Our Time Travelling</p>
+        <p className="pLower">Horoscopes with Our Time Travelling</p>
       </div>
     </>
   );

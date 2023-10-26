@@ -2,14 +2,17 @@
   height: 60px;
   background-image: linear-gradient(
     to right,
-    blue,
-    blue,
-    rgb(148, 18, 137),
-    rgb(148, 18, 137)
+
+    rgb(73, 70, 70),
+    rgba(255, 0, 0, 0.786)
+      /* rgb(207, 148, 20),
+    rgb(207, 148, 20),
+    rgb(148, 53, 16) */
   );
   width: 100%;
   background-size: 100% 60px;
   position: fixed;
+  z-index: 3;
 }
 .logoImg {
   height: 40px;
@@ -29,6 +32,10 @@
   display: flex;
   margin-left: 40px;
   margin-bottom: 0px;
+}
+.bodyDiv {
+  position: relative;
+  top: 60px;
 }
 .Img-p {
   color: white;

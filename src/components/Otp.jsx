@@ -1,4 +1,4 @@
-import "../styles/login.css";
+import "../styles/signup.css";
 import "../styles/Otp.css";
 import destiny from "../images/destiny.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ export default function Otp() {
   const [prev, setPrev] = useState(true);
   const back = () => {
     if (prev) {
-      navigate("/Homepage/Signup");
+      navigate("/Signup");
     } else {
       setPrev(false);
     }
