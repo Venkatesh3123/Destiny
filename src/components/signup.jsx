@@ -437,16 +437,18 @@ export default function Signup() {
   ];
   const nameChange = (event) => {
     setName(event.target.value);
-  };
+    const handleName = () => {
+      if (name === "") {
+        return "Please Enter Your Name";
+      } else if (!name.match(namePattern)) {
+        return "Please Enter Alphabets only";
+      } else if (name.length < 4) {
+        return "Name should be greater than 3 letters";
+      } else {
+        setSubmit(false);
+      }
+    };
 
-  const handleName = () => {
-    if (name === "") {
-      return "Please Enter Your Name";
-    } else {
-      setSubmit(false);
-    }
-  };
-  const nameClick = () => {
     const error1 = handleName();
     setError((prev) => ({
       ...prev,
@@ -454,24 +456,56 @@ export default function Signup() {
     }));
   };
 
+  // const handleName = () => {
+  //   if (name === "") {
+  //     return "Please Enter Your Name";
+  //   } else {
+  //     setSubmit(false);
+  //   }
+  // };
+  // const nameClick = () => {
+  //   const error1 = handleName();
+  //   setError((prev) => ({
+  //     ...prev,
+  //     name: error1,
+  //   }));
+  // };
+
   const locationChange = (event) => {
     setLocation(event.target.value);
-  };
+    const handleLocation = () => {
+      if (location === "") {
+        return "Please Enter Your Location";
+      } else if (!location.match(namePattern)) {
+        return "Please Enter Alphabets Only";
+      } else if (location.length < 4) {
+        return "Location should be greater than 3 letters";
+      } else {
+        setSubmit1(false);
+      }
+    };
 
-  const handleLocation = () => {
-    if (location === "") {
-      return "Please Enter Your Location";
-    } else {
-      setSubmit1(false);
-    }
-  };
-  const locationClick = () => {
     const error1 = handleLocation();
     setError((prev) => ({
       ...prev,
       location1: error1,
     }));
   };
+
+  // const handleLocation = () => {
+  //   if (location === "") {
+  //     return "Please Enter Your Location";
+  //   } else {
+  //     setSubmit1(false);
+  //   }
+  // };
+  // const locationClick = () => {
+  //   const error1 = handleLocation();
+  //   setError((prev) => ({
+  //     ...prev,
+  //     location1: error1,
+  //   }));
+  // };
 
   const dateChange = (date) => {
     if (date && date instanceof Date && !isNaN(date)) {
@@ -814,10 +848,10 @@ export default function Signup() {
                 className="nameInput"
                 placeholder="Enter Your Name"
                 onChange={nameChange}
-                onClick={nameClick}
+                // onClick={nameClick}
               ></input>
             </div>
-            {submit & (nme == false) ? (
+            {/* {submit & (nme == false) ? (
               <p className="error">{error.name}</p>
             ) : (
               <p></p>
@@ -826,7 +860,8 @@ export default function Signup() {
               <p className="error">{error.name}</p>
             ) : (
               <p></p>
-            )}
+            )} */}
+            {error ? <p className="error">{error.name}</p> : <p></p>}
 
             <label className="label12">LOCATION:</label>
 
@@ -842,10 +877,10 @@ export default function Signup() {
                 className="nameInput"
                 placeholder="Enter Your Birth place"
                 onChange={locationChange}
-                onClick={locationClick}
+                // onClick={locationClick}
               ></input>
             </div>
-            {submit1 & (locate == false) ? (
+            {/* {submit1 & (locate == false) ? (
               <p className="error">{error.location1}</p>
             ) : (
               <p></p>
@@ -854,7 +889,8 @@ export default function Signup() {
               <p className="error">{error.location1}</p>
             ) : (
               <p></p>
-            )}
+            )} */}
+            {error ? <p className="error">{error.location1}</p> : <p></p>}
 
             <label className="label12">DATE OF BIRTH:</label>
             <div className="nameDiv">
