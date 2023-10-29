@@ -563,22 +563,43 @@ export default function Signup() {
 
   const mobileChange = (event) => {
     setMobile(event.target.value);
-  };
+    const handleMobile = () => {
+      if (mobile === "") {
+        return "Please Enter Your Mobile number";
+      } else if (mobile.length < 10) {
+        return "Mobile number should contain 10 digits";
+      } else if (!mobile.match(mobilePattern)) {
+        return "Please Enter Numbers only";
+      } else {
+        setMobileSubmit(false);
+      }
+    };
 
-  const handleMobile = () => {
-    if (mobile === "") {
-      return "Please Enter Your Mobile number";
-    } else {
-      setMobileSubmit(false);
-    }
-  };
-  const mobileClick = () => {
     const error1 = handleMobile();
     setError((prev) => ({
       ...prev,
       mobile: error1,
     }));
   };
+
+  // const handleMobile = () => {
+  //   if (mobile === "") {
+  //     return "Please Enter Your Mobile number";
+  //   } else if (!mobile.match(mobilePattern)) {
+  //     return "Please Enter Numbers only";
+  //   } else if (!mobile.length === 10) {
+  //     return "Mobile number should contain 10 digits";
+  //   }else {
+  //     setMobileSubmit(false);
+  //   }
+  // };
+  // const mobileClick = () => {
+  //   const error1 = handleMobile();
+  //   setError((prev) => ({
+  //     ...prev,
+  //     mobile: error1,
+  //   }));
+  // };
   const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).*$/;
   const passChange = (event) => {
     setPassword(event.target.value);
@@ -953,8 +974,8 @@ export default function Signup() {
               >
                 <option value="">Select Gender</option>
                 <option value="male">Male</option>
-                <option value="male">Female</option>
-                <option value="male">Others</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
               </select>
             </div>
             {!isValidCheck ? (
@@ -1047,7 +1068,7 @@ export default function Signup() {
                 className="input1"
                 placeholder="Enter your mobile number"
                 onChange={mobileChange}
-                onClick={mobileClick}
+                // onClick={mobileClick}
               ></input>
             </div>
             <div style={{ display: "flex" }}>
@@ -1061,7 +1082,7 @@ export default function Signup() {
                 )}
               </div>
               <div>
-                {" "}
+                {/* {" "}
                 {mobileSubmit & (mbl == false) ? (
                   <p className="error">{error.mobile}</p>
                 ) : (
@@ -1071,7 +1092,8 @@ export default function Signup() {
                   <p className="error">{error.mobile}</p>
                 ) : (
                   <p></p>
-                )}
+                )} */}
+                {error ? <p className="error">{error.mobile}</p> : <p></p>}
               </div>{" "}
             </div>
 
