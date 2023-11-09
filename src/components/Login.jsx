@@ -7,7 +7,7 @@ export default function LoginForm() {
   const [error, setError] = useState({});
   const [submit, setSubmit] = useState(false);
   const [submit1, setSubmit1] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const emailChange = (event) => {
     setEmail(event.target.value);
   };
@@ -75,7 +75,7 @@ export default function LoginForm() {
     }));
   };
   const Register = () => {
-    navigate("/Signup");
+    // navigate("/Signup");
   };
   return (
     <div className="center">

@@ -1,100 +1,316 @@
+@import url(https://db.onlinewebfonts.com/c/0483b4eeaaefc7b81986e43702c7900d?family=Prototype);
+@import url(https://db.onlinewebfonts.com/c/f94b11133a09564942c1d46914a036b6?family=Simply+Square+JL+V1);
+@import url(https://db.onlinewebfonts.com/c/f94b11133a09564942c1d46914a036b6?family=Simply+Square+JL+V1);
+
+.title1-p1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Simply Square JL V1";
+  letter-spacing: 10px;
+  margin-top: 0px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.title1-p2 {
+  color: red;
+  font-size: 50px;
+  margin-top: -90px;
+  letter-spacing: 10px;
+  font-family: "Simply Square JL V1";
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.title1 p:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+.title1 p:nth-child(2) {
+  color: red;
+  animation: animate1 4s ease-in-out infinite;
+}
+@keyframes animate1 {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      30% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
 .img {
-  height: 560px;
-  width: 100%;
-  box-shadow: 2px 10px 20px rgb(255, 252, 252);
+  height: 400px;
+  width: 80%;
+
+  animation: horizontal-shaking 1s infinite;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .mainDiv {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: center;
-  /* background-color: whitesmoke; */
-  /* background-image: linear-gradient(
-    to bottom,
-    white,
-    rgba(255, 0, 0, 0.526),
-    white,
-    rgba(255, 0, 0, 0.526),
-    white
+  margin: auto;
+
+  height: 500px;
+  margin-bottom: 50px;
+  border-radius: 90px;
+
+  /* background-image: radial-gradient(
+    closest-side at 60% 60%,
+    rgb(238, 238, 245),
+    black
   );
-  background-size: 100% 600px; */
+  background-position: -100px -400px;
+  background-repeat: no-repeat; */
+  /* background-image: linear-gradient(
+    to top,
+    rgba(16, 31, 132, 0.553),
+    transparent,
+    transparent
+  ); */
+  background-image: url("../../images/HomepageImages/courselback.svg");
 
-  height: 600px;
-}
-.firstDiv {
-  width: 20%;
-
-  height: 600px;
-  /* background-image: url("../../images/HomepageImages/blur.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 560px; */
-  background-color: black;
-}
-.lastDiv {
-  width: 20%;
-  height: 600px;
-
-  /* background-image: url("../../images/HomepageImages/last.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 500px; */
-  background-color: black;
-}
-.mainCOursel {
-  width: 60%;
-  height: 560px;
-  box-shadow: 2px 10px 20px rgb(255, 252, 252);
-  margin-top: 0px;
-  z-index: 2;
+  background-size: 150% 500px;
+  background-position: center;
 }
 
-.couHead1 {
+.mainDiv1 {
+  height: 500px;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  padding: 60px;
+}
+.main1-h2 {
   color: white;
-  background-color: rgba(24, 20, 3, 0.201);
-  font-family: cursive;
+  font-family: "Prototype";
+
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 7px;
 }
-.couHead2 {
+
+.main1-p {
   color: white;
-  font-family: cursive;
+  font-size: 15px;
+  letter-spacing: 3px;
 }
-.couHead3 {
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -30%;
+}
+
+.button {
+  min-width: 200px;
+  min-height: 50px;
+  font-family: "Simply Square JL V1";
+  font-size: 22px;
+
+  letter-spacing: 6px;
+  font-weight: 700;
   color: white;
-  background-color: rgba(0, 0, 0, 0.488);
-  font-family: cursive;
+  background-color: #d86421;
+  /* background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  ); */
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 6px 10px rgba(63, 106, 207, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
 }
-.couPara1 {
-  font-size: 18px;
-  background-color: rgba(24, 20, 3, 0.201);
+
+.button::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: calc(200px + 6px);
+  min-height: calc(50px + 6px);
+  border: 6px solid #bf3207;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
 }
-.couPara2 {
-  font-size: 18px;
+
+.button:hover,
+.button:focus {
+  color: #313133;
+  transform: translateY(-6px);
 }
-.couPara3 {
-  font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.488);
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
 }
+
+.button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 3px solid red;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after,
+.button:focus::after {
+  /* animation: none; */
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+.mainDiv2 {
+  height: 500px;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
 .lowerDiv {
   height: 200px;
   width: 100%;
-  color: black;
+  color: white;
   text-align: center;
   padding-top: 10px;
-  border: 2px solid black;
-  background-color: whitesmoke;
+  transform: scale(0);
+  transition: transform 0.5s, opacity 0.5s;
 
   position: relative;
-  top: -40px;
+  top: -10px;
+  animation: flyIn 3s forwards;
 }
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .span1 {
-  font-family: Copperplate, Papyrus, fantasy;
-  font-weight: 1000;
-  text-shadow: 2px 2px 5px rgb(43, 36, 36);
-  font-size: 20px;
+  font-family: "Prototype";
+  letter-spacing: 7px;
+  font-weight: lighter;
+  text-shadow: 3px 1px 2px rgb(181, 5, 5);
+  font-size: 30px;
 }
 .span2 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: "Prototype";
+  letter-spacing: 7px;
+  font-weight: 0;
   font-weight: 1000;
-  text-shadow: 2px 2px 5px rgb(43, 36, 36);
-  font-size: 20px;
+  text-shadow: 3px 1px 2px rgb(181, 5, 5);
+  font-size: 30px;
 }
 .pLower {
   font-size: 20px;
+  font-family: robot;
+  letter-spacing: 5px;
+}
+.custom-cursor {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  background-image: linear-gradient(to right, rgb(192, 240, 255), white);
+  background-size: 80%, 100px;
+  opacity: 0.2;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s, background 0.2s;
+  mix-blend-mode: difference;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.custom-cursor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
