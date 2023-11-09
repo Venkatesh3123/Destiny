@@ -22,7 +22,17 @@ export default function Footer() {
                 style={{ color: "white" }}
                 className="i"
               />
-              <span className="liSpan"> CONTACT US</span>
+              <span className="liSpan">
+                {" "}
+                <a
+                  href="https://www.google.com/maps/place/T-Hub+Phase+2/@17.4345557,78.3766436,17z/data=!4m14!1m7!3m6!1s0x3bcb93e37831f177:0x32d4499d34baaa78!2sT-Hub+Phase+2!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9!3m5!1s0x3bcb93e37831f177:0x32d4499d34baaa78!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9?entry=ttu"
+                  target="_blank"
+                  className="a"
+                >
+                  {" "}
+                  CONTACT US
+                </a>
+              </span>
             </li>
             <li>
               <FontAwesomeIcon
@@ -36,6 +46,7 @@ export default function Footer() {
                   href="https://www.google.com/maps/place/T-Hub+Phase+2/@17.4345557,78.3766436,17z/data=!4m14!1m7!3m6!1s0x3bcb93e37831f177:0x32d4499d34baaa78!2sT-Hub+Phase+2!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9!3m5!1s0x3bcb93e37831f177:0x32d4499d34baaa78!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9?entry=ttu"
                   target="_blank"
                   className="a"
+                  style={{ marginLeft: "20px" }}
                 >
                   T-Hub phase 2, Hyderabad
                 </a>{" "}
@@ -48,10 +59,18 @@ export default function Footer() {
                 style={{ color: "white" }}
                 className="i"
               />
-              <span className="liSpan"> About Us</span>
+              <span className="liSpan">
+                {" "}
+                <a
+                  href="https://www.google.com/maps/place/T-Hub+Phase+2/@17.4345557,78.3766436,17z/data=!4m14!1m7!3m6!1s0x3bcb93e37831f177:0x32d4499d34baaa78!2sT-Hub+Phase+2!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9!3m5!1s0x3bcb93e37831f177:0x32d4499d34baaa78!8m2!3d17.4345506!4d78.3792185!16s%2Fg%2F11ddx33gc9?entry=ttu"
+                  target="_blank"
+                  className="a"
+                >
+                  About Us
+                </a>
+              </span>
             </li>
             <li>
-              {" "}
               <FontAwesomeIcon
                 icon={faEnvelope}
                 size="s"
@@ -63,6 +82,7 @@ export default function Footer() {
                   href="mailto:techsupport@destini.ai"
                   target="_blank"
                   className="a"
+                  style={{ marginLeft: "20px" }}
                 >
                   techsupport@destini.ai
                 </a>
@@ -72,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="FooterDiv2">
-          <ul className="UlDiv1">
+          <ul className="UlDiv2">
             <li>
               <i class="fa fa-linkedin i" style={{ color: "white" }}></i>
               <span className="liSpan1">
@@ -80,8 +100,9 @@ export default function Footer() {
                   href=" https://www.linkedin.com/company/destini-ai/ "
                   className="a"
                   target="_blank"
+                  style={{ marginLeft: "19px" }}
                 >
-                  LinedIn
+                  LinkedIn
                 </a>
               </span>
             </li>

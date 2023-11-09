@@ -4,7 +4,7 @@ import destiny from "../images/destiny.png";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import {
   faUser,
   faLocationDot,
@@ -663,7 +663,7 @@ export default function Signup() {
     }));
   };
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const namePattern = /[A-Za-z]/;
   const mobilePattern = /[0-9]/;
   const minLength = 8;
@@ -832,7 +832,7 @@ export default function Signup() {
       pass &
       repass
     ) {
-      navigate("/Signup/OTP&verification");
+      // navigate("/Signup/OTP&verification");
       console.log(name);
     }
   };
@@ -861,7 +861,7 @@ export default function Signup() {
               </p>
             </div>
             <h2 className="head">SIGN UP</h2>
-            <label className="label12">NAME:</label>
+            <label className="label123">NAME:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faUser} size="xl" className="user" />
               <input
@@ -884,7 +884,7 @@ export default function Signup() {
             )} */}
             {error ? <p className="error">{error.name}</p> : <p></p>}
 
-            <label className="label12">LOCATION:</label>
+            <label className="label123">LOCATION:</label>
 
             <div className="nameDiv">
               <FontAwesomeIcon
@@ -913,7 +913,7 @@ export default function Signup() {
             )} */}
             {error ? <p className="error">{error.location1}</p> : <p></p>}
 
-            <label className="label12">DATE OF BIRTH:</label>
+            <label className="label123">DATE OF BIRTH:</label>
             <div className="nameDiv">
               <FontAwesomeIcon
                 icon={faCalendarDays}
@@ -943,7 +943,7 @@ export default function Signup() {
               <p></p>
             )}
 
-            <label className="label12">TIME OF BIRTH:</label>
+            <label className="label123">TIME OF BIRTH:</label>
 
             <div className="nameDiv">
               <FontAwesomeIcon icon={faClock} size="xl" className="user" />
@@ -960,7 +960,7 @@ export default function Signup() {
               />
             </div>
             {errorTime && <p className="error">{errorTime}</p>}
-            <label className="label12">GENDER:</label>
+            <label className="label123">GENDER:</label>
             <div className="nameDiv">
               <FontAwesomeIcon
                 icon={faTransgender}
@@ -983,7 +983,7 @@ export default function Signup() {
             ) : (
               ""
             )}
-            <label className="label12">RELATIONSHIP STATUS:</label>
+            <label className="label123">RELATIONSHIP STATUS:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faHeart} size="xl" className="user" />
               <select
@@ -1003,7 +1003,7 @@ export default function Signup() {
             ) : (
               ""
             )}
-            <label className="label12">PASSWORD:</label>
+            <label className="label123">PASSWORD:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faLock} size="xl" className="user" />
               <input
@@ -1022,7 +1022,7 @@ export default function Signup() {
             )} */}
             {error ? <p className="error">{error.password1}</p> : <p></p>}
 
-            <label className="label12">CONFIRM-PASSWORD:</label>
+            <label className="label123">CONFIRM-PASSWORD:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faLock} size="xl" className="user" />
               <input
@@ -1045,7 +1045,7 @@ export default function Signup() {
             )}
 
             {/* <h4 className="side">Enter Your Mobile:</h4> */}
-            <label className="label12">MOBILE NUMBER:</label>
+            <label className="label123">MOBILE NUMBER:</label>
             <div className="nameDiv">
               <FontAwesomeIcon icon={faPhone} size="xl" className="user" />
               <select

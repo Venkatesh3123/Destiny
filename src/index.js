@@ -12,6 +12,8 @@ import Coursel from "./components/Homepage/Coursel";
 import Body from "./components/Homepage/body";
 import Footer from "./components/Homepage/Footer";
 import LoginForm from "./components/Login";
+import Footer1 from "./components/Homepage/Footer1";
+import Signup1 from "./components/Signup1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,12 +21,15 @@ root.render(
     <App />
     {/* <Signup /> */}
     {/* <LoginForm /> */}
-    {/* <Login /> */}
+    {/* <LoginForm /> */}
     {/* <Otp /> */}
     {/* <Cards /> */}
+    {/* <Footer1 /> */}
     {/* <Userinfo /> */}
     {/* <Homepage /> */}
     {/* <Nav /> */}
+    {/* <Signup1 /> */}
+
     {/* <Coursel /> */}
     {/* <Body /> */}
     {/* <Footer /> */}

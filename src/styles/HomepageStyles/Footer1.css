@@ -1,0 +1,32 @@
+.mainFooter {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainFooter-sub {
+  height: 100px;
+  width: 60%;
+
+  display: flex;
+  align-items: center;
+}
+.subDiv-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.subDiv-ul li {
+  margin-right: 40px;
+}
+.icon-size {
+  height: 30px;
+  width: 30px;
+}
+.iconli {
+  height: 30px;
+  width: 30px;
+}

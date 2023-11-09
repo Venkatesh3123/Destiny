@@ -1,21 +1,24 @@
+@import url(https://db.onlinewebfonts.com/c/f94b11133a09564942c1d46914a036b6?family=Simply+Square+JL+V1);
+
 .Footer {
   height: 200px;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(73, 70, 70),
     rgba(255, 0, 0, 0.786)
   );
-  background-size: 100% 150px;
+  background-size: 100% 150px; */
   display: flex;
-  border: 1px solid black;
+
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
   margin-top: -50px;
 }
 .FooterDiv1 {
-  width: 50%;
+  width: 60%;
+  text-align: left;
 
   height: 120px;
 }
@@ -25,11 +28,15 @@
   justify-content: center;
 
   text-align: left;
-  margin-left: 200px;
+  margin-left: 350px;
   margin-top: 0px;
-  line-height: 30px;
+  line-height: 40px;
   color: white;
-  font-weight: bold;
+  /* font-family: robot; */
+  font-family: "Simply Square JL V1";
+  letter-spacing: 6px;
+  font-size: 12px;
+
   box-sizing: border-box;
 }
 .liSpan {
@@ -37,16 +44,17 @@
 }
 .liSpan1 {
   cursor: pointer;
-  margin-left: 3px;
+  margin-left: 1.6px;
+  text-align: left;
 }
 .liSpan:hover {
   color: black;
 }
 
 .FooterDiv2 {
-  width: 50%;
+  width: 40%;
 
-  height: 120px;
+  height: 150px;
 }
 
 .UlDiv2 {
@@ -56,9 +64,18 @@
   align-items: center;
   text-align: left;
 
-  margin-left: 100px;
-  margin-top: 30px;
+  margin-left: 10px;
+  margin-top: 12px;
   line-height: 20px;
+  margin-right: 20px;
+  line-height: 42px;
+  color: white;
+  /* font-family: robot; */
+  font-family: "Simply Square JL V1";
+  letter-spacing: 6px;
+  font-size: 12px;
+
+  box-sizing: border-box;
 }
 .i {
   margin-right: 20px;
@@ -68,7 +85,9 @@
 .a {
   text-decoration: none;
   color: white;
+  margin-left: 10px;
 }
 .a:hover {
-  color: black;
+  color: yellow;
+  font-weight: 700;
 }
